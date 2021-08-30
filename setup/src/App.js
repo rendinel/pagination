@@ -16,7 +16,7 @@ function App() {
   const handlePage = (index) => {
     setPage(index)
   }
-
+  //{4} when i click on the btn i add one to the actualpage and after the last element of data i set to be equal to the first one
   const nextPage = () => {
     setPage((oldPage) => {
       let nextPage = oldPage + 1
@@ -26,7 +26,7 @@ function App() {
       return nextPage
     })
   }
-
+  //{4}when i click on the btn i subtract one from the actual page then if i reach the first element and prevpage became less than 0 i set prevpage to be equal to the lastelement of the array
   const prevPage = () => {
     setPage((oldPage) => {
       let prevPage = oldPage - 1
